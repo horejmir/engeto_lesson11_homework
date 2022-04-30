@@ -1,0 +1,11 @@
+CREATE TABLE `item` (
+  `iditem` int(11) NOT NULL AUTO_INCREMENT,
+  `partNo` varchar(45) NOT NULL,
+  `serialNo` varchar(45) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `description` varchar(100) DEFAULT NULL,
+  `numberInStock` int(11) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  PRIMARY KEY (`iditem`),
+  UNIQUE KEY `serialNo_UNIQUE` (`serialNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
